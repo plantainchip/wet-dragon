@@ -1,6 +1,6 @@
 // initialize context
 kaboom({
-	scale: 10,
+	scale: 8,
 })
 volume(0.2)
 

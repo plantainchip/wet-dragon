@@ -5,9 +5,9 @@ kaboom({
 volume(0.2)
 
 // load assets
-loadSprite("cloudswaterreflection", "sprites/cloudswaterreflection.png");
-loadAseprite("player", "sprites/player.png", "sprites/player.json");
-loadAseprite("dragon2", "sprites/dragon2.png", "sprites/dragon2.json");
+loadSprite("cloudswaterreflection", "assets/cloudswaterreflection.png");
+loadAseprite("player", "assets/player.png", "assets/player.json");
+loadAseprite("dragon2", "assets/dragon2.png", "assets/dragon2.json");
 
 
 // add background to screen

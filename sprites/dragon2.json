@@ -1,0 +1,36 @@
+{ "frames": [
+   {
+    "filename": "dragon2 0.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 128, "h": 72 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 72 },
+    "sourceSize": { "w": 128, "h": 72 },
+    "duration": 100
+   },
+   {
+    "filename": "dragon2 1.aseprite",
+    "frame": { "x": 128, "y": 0, "w": 128, "h": 72 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 72 },
+    "sourceSize": { "w": 128, "h": 72 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.2.35-x64",
+  "image": "dragon2.png",
+  "format": "RGBA8888",
+  "size": { "w": 256, "h": 72 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "dragon mouth close", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}

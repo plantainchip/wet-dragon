@@ -81,13 +81,37 @@ const player = add([
 	{ isPeeing: false, }
 ])
 
+
+//restart
+let restartPos = center()
+restartPos.x -= 30
+restartPos.y -= 3
+const restart = add([
+    text("Restart", {
+      font: "sink",
+      size: 56,
+    }),
+    scale(0.08),
+    pos(restartPos),
+    opacity (0.0),
+    area(),
+    "restartbutton",
+])
+
+
+
 // how to lose the game
 let isPlayerDead = false
   
 onUpdate( () => {
   if (dragoneyecounter % 2 == 0 && player.isPeeing == true){
     destroy(player)
+    restart.opacity = 1
     isPlayerDead = true
+    // function to reloads page
+    onClick("restartbutton",() => {
+      location.reload()
+    })
   }
 
   if (player.isPeeing && !isPlayerDead ){
@@ -95,6 +119,9 @@ onUpdate( () => {
     score.text = "Score:" + Math.floor(score.value)
   }
 })
+
+
+
 
 //player peeing or not peeing
 onKeyPress("z", () => {
@@ -116,5 +143,6 @@ onTouchEnd( () => {
 	player.frame = 0
 	player.isPeeing = false
 })
+
 
    
